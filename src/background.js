@@ -171,13 +171,13 @@ function proccess(httpRequest) {
 		THERMO = new Image();
 		THERMO.src = "http://www.meteoclub.kz/imageterm.php";
 		console.dir(THERMO);
-		//document.getElementById("1").innerHTML="<img src='http://www.meteoclub.kz/imageterm.php'>";
-		HTML="<br><center><font size=5>"+temperature+"°C</font><br><font size=1>Обновлен: "+my_time+"</font></center>";
+		
+		HTML="<br><center><font size=5>"+temperature+"�C</font><br><font size=1>"+my_time+"</font></center>";
 				
 			
 		} else {
 
-			document.getElementById("2").innerHTML="<center>Проблемы соединения</center>";
+			document.getElementById("2").innerHTML="<center>Connection failed</center>";
 		}
 	}
 	
